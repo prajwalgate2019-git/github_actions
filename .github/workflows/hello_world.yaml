@@ -1,15 +1,15 @@
-name: Hello World[cite: 1]
 
-on:[cite: 1]
-  push:[cite: 1]
-    branches:[cite: 1]
-      - main[cite: 1]
+name: Hello World
 
-jobs:[cite: 1]
-  first-hello-world-job:[cite: 1]
-    runs-on: ubuntu-latest[cite: 1]
-    steps:[cite: 1]
-      - name: Checkout code[cite: 1]
-        uses: actions/checkout@v3[cite: 1]
-      - name: Print message[cite: 1]
-        run: echo "Hello world GA testing"[cite: 1]
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello World! My first GitHub Actions workflow is running."
+
