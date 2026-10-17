@@ -1,5 +1,5 @@
 
-def test_hello():
+def test_math():
     assert "hello".upper() == "HELLO"
 
 def test_addition():
